@@ -18,9 +18,10 @@ const handleUserInput = function () {
 };
 
 
-const setupInput = function () {
+const setupInput = function (conn) {
 
-
+  let connection;
+  connection = conn;
   const stdin = process.stdin;
   stdin.on("data", handleUserInput);
 
